@@ -27,6 +27,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php echo esc_html( get_post_meta( get_the_ID(), 'client_name', true ) ); ?>
+		<?php echo esc_html( get_post_meta( get_the_ID(), 'company_name', true ) ); ?>
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
